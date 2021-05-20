@@ -1,0 +1,44 @@
+.trabajos {
+    width: 100%;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0; 
+
+
+    h2{
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .trabajo {
+            margin: 2vw 1vw;
+            flex: 1;
+        }
+    }  
+}
+
+@media (min-width: 769px) and (max-width: 1092px){
+    .trabajos {
+        h2{
+            font-size: 3vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .trabajos {
+        h2{
+            font-size: 5vw;
+        }
+    }
+}

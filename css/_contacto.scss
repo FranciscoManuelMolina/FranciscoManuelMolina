@@ -1,0 +1,68 @@
+.contacto {
+    width: 100%;
+    background: white;//#3b83bd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    //padding: 4vw 0; 
+
+
+    h2{
+        padding: 2vw;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 4vw;
+        padding-bottom: 3vw;
+        transition: all 300ms;
+
+        a:hover{
+            transform: scale(1.1);
+        }
+
+        .azullinkedin{
+            color: #0e76a8;
+        }
+
+        .naranjagit{
+            color: #f34f29;
+        }
+        
+        .azultwitter{
+            color: #00acee;
+        }
+        
+        .rojoemail{
+            color: #d62d20;
+        }
+
+        p{
+            font-size: 1.2vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto{
+
+        h2{
+            font-size: 5vw;
+        }
+
+        .contenedor{
+            font-size: 12vw;
+
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+}

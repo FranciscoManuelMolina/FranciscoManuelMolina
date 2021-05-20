@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "sanFrancisco";
+  src: url(fonts/SFNSDisplay-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: "sanFrancisco";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+}
+header .logo {
+  margin-left: 0.8rem;
+  font-size: 2vw;
+  color: #3b83bd;
+}
+header .logo span {
+  color: black;
+  font-size: 2vw;
+}
+header #btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+  padding: 2vw;
+}
+header label:hover {
+  cursor: pointer;
+}
+header span {
+  color: black;
+  font-size: 2.5vw;
+  text-align: center;
+}
+header .menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header .menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+}
+header .menu ul li a:hover {
+  color: #3b83bd;
+  text-shadow: 0px 0px 2px #3b83bd;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 4vw;
+  }
+  header .logo span {
+    font-size: 4vw;
+  }
+  header #btn-menu:checked ~ .menu {
+    left: 0;
+  }
+  header label {
+    display: block;
+  }
+  header .menu {
+    position: absolute;
+    background: #eee;
+    width: 100%;
+    left: 200%;
+    transition: all 0.5s;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header .menu ul li {
+    background: white;
+    text-align: center;
+  }
+}
+@media (min-width: 642px) and (max-width: 768px) {
+  .menu {
+    top: 5vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 641px) {
+  .menu {
+    top: 6vw;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    top: 8vw;
+  }
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+}
+.banner .banner-izquierda {
+  background: #3b83bd;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 2vw;
+}
+.banner .banner-izquierda h2 {
+  font-size: 4vw;
+}
+.banner .banner-izquierda h2 .texto-blanco {
+  color: white;
+}
+.banner .banner-izquierda p {
+  font-size: 2vw;
+  margin: 0.5em 0;
+}
+.banner .banner-derecha {
+  flex: 1;
+  flex-wrap: nowrap;
+  max-width: 50%;
+  max-height: auto;
+}
+.banner .banner-derecha img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner .banner-izquierda {
+    width: 100%;
+    height: 95vh;
+  }
+  .banner .banner-izquierda h2 {
+    font-size: 8vw;
+  }
+  .banner .banner-izquierda p {
+    font-size: 4vw;
+  }
+  .banner .banner-derecha {
+    display: none;
+  }
+}
+.sobremi {
+  text-align: center;
+}
+.sobremi h2 {
+  padding: 2vw;
+  padding-bottom: 0vw;
+  font-size: 2vw;
+}
+.sobremi .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.sobremi .contenedor .contenedor-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 3vw;
+  line-height: 3vw;
+}
+.sobremi .contenedor .contenedor-izquierda h3 {
+  font-size: 2vw;
+}
+.sobremi .contenedor .contenedor-izquierda h4 {
+  font-size: 1.5vw;
+}
+.sobremi .contenedor .contenedor-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sobremi .contenedor .contenedor-derecha span {
+  font-size: 4vw;
+  color: #3b83bd;
+  padding: 1.5vw;
+}
+.sobremi .contenedor .contenedor-derecha .naranjahtml {
+  color: #f06529;
+}
+.sobremi .contenedor .contenedor-derecha .azulcss {
+  color: #2965f1;
+}
+.sobremi .contenedor .contenedor-derecha .amarillojavascript {
+  color: #f0db4f;
+}
+.sobremi .contenedor .contenedor-derecha .rosasass {
+  color: #cc6699;
+}
+.sobremi .contenedor .contenedor-derecha .moradobootstrap {
+  color: #563d7c;
+}
+.sobremi .contenedor .contenedor-derecha .naranjagit {
+  color: #f34f29;
+}
+.sobremi .contenedor .contenedor-derecha h3 {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+  .sobremi h2 {
+    font-size: 5vw;
+  }
+  .sobremi .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6vw;
+  }
+  .sobremi .contenedor .contenedor-izquierda {
+    line-height: 8vw;
+    padding: 7vw;
+  }
+  .sobremi .contenedor .contenedor-izquierda h3 {
+    font-size: 8vw;
+    padding-bottom: 2vw;
+  }
+  .sobremi .contenedor .contenedor-izquierda h4 {
+    font-size: 5vw;
+    padding-bottom: 2vw;
+  }
+  .sobremi .contenedor .contenedor-derecha span {
+    font-size: 10vw;
+    padding: 4vw;
+  }
+  .sobremi .contenedor .contenedor-derecha h3 {
+    font-size: 4vw;
+  }
+}
+.trabajos {
+  width: 100%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0;
+}
+.trabajos h2 {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+.trabajos .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trabajos .contenedor .trabajo {
+  margin: 2vw 1vw;
+  flex: 1;
+}
+
+@media (min-width: 769px) and (max-width: 1092px) {
+  .trabajos h2 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .trabajos h2 {
+    font-size: 5vw;
+  }
+}
+.contacto {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.contacto h2 {
+  padding: 2vw;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+.contacto .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 4vw;
+  padding-bottom: 3vw;
+  transition: all 300ms;
+}
+.contacto .contenedor a:hover {
+  transform: scale(1.1);
+}
+.contacto .contenedor .azullinkedin {
+  color: #0e76a8;
+}
+.contacto .contenedor .naranjagit {
+  color: #f34f29;
+}
+.contacto .contenedor .azultwitter {
+  color: #00acee;
+}
+.contacto .contenedor .rojoemail {
+  color: #d62d20;
+}
+.contacto .contenedor p {
+  font-size: 1.2vw;
+}
+
+@media (max-width: 768px) {
+  .contacto h2 {
+    font-size: 5vw;
+  }
+  .contacto .contenedor {
+    font-size: 12vw;
+  }
+  .contacto .contenedor p {
+    font-size: 3vw;
+  }
+}
+footer {
+  background: #3b83bd;
+  padding: 1vw;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 3vw;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

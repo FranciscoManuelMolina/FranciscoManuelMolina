@@ -1,0 +1,122 @@
+.sobremi{
+    text-align: center;
+
+    h2{
+        padding: 2vw;
+        padding-bottom: 0vw;
+        font-size: 2vw;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+        .contenedor-izquierda{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding: 3vw;
+            line-height: 3vw;
+
+            h3{
+                font-size: 2vw;
+            }
+
+            h4{
+                font-size: 1.5vw;
+            }
+        }
+
+        .contenedor-derecha{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            span {
+                font-size: 4vw;
+                color: #3b83bd;
+                padding: 1.5vw;
+            }
+
+            .naranjahtml{
+                color: #f06529;
+            }
+            
+            .azulcss{
+                color: #2965f1
+            }
+            
+            .amarillojavascript{
+                color: #f0db4f;
+            }
+            
+            .rosasass{
+                color: #cc6699;
+            }
+            
+            .moradobootstrap{
+                color: #563d7c;
+            }
+            
+            .naranjagit{
+                color: #f34f29;
+            }
+    
+            h3 {
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+.sobremi{
+
+    h2{
+        font-size: 5vw;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 6vw;
+
+        .contenedor-izquierda{
+            line-height: 8vw;
+            padding: 7vw;
+
+            h3{
+                font-size: 8vw;
+                padding-bottom: 2vw;
+            }
+
+            h4{
+                font-size: 5vw;
+                padding-bottom: 2vw;
+            }
+        }
+
+        .contenedor-derecha{
+            span {
+                font-size: 10vw;
+                padding: 4vw;
+            }
+    
+            h3 {
+                font-size: 4vw;
+            }
+        }
+
+
+    }
+}
+
+}
